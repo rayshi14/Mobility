@@ -1,0 +1,13 @@
+clear;
+clc;
+in_size_states = 2;
+in_e_samples = 20;
+in_num_sim = 1;
+%[out_x_coord1, out_x_coord2, out_y_final1_eff, out_y_final2_eff] = process_new_method_eth_easy(in_size_states, in_e_samples, in_num_sim);
+[out_x_coord1, out_x_coord3, out_y_final1_eff, out_y_final3_eff] = process_new_method_eth(in_e_samples, in_num_sim);
+%save('eth_x1', 'out_x_coord1');
+%save('eth_y1', 'out_y_final1_eff');
+%save('eth_x2', 'out_x_coord2');
+%save('eth_y2', 'out_y_final2_eff');
+%save('eth_x3', 'out_x_coord3');
+%save('eth_y3', 'out_y_final3_eff');
